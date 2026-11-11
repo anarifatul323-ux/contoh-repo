@@ -7,8 +7,8 @@ public function index()
 }
 public function login()
 {
-	$this->load->model('M_admin');
-	$admin = $this->M_admin->cek_login($this->input->post('username'), md5($this->input->post('password')));
+	$this->load->model('Admin_model');
+	$admin = $this->Admin_model->cek_login($this->input->post('username'), md5($this->input->post('password')));
 	if ($admin) {
 		$this->session->set_userdata(['login' => TRUE, 'username' => $admin->username]);
 		redirect('dashboard');

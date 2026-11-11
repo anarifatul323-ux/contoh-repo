@@ -1,5 +1,5 @@
 <?php
-class M_barang extends CI_Model{
+class M_barang extends CI_Model {
 public function tampil()          { return $this->db->get('barang')->result(); }
 public function ambil($id)        { return $this->db->get_where('barang', ['id_barang' => $id])->row(); }
 public function simpan($data)     { $this->db->insert('barang', $data); }
