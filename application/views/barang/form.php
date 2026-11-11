@@ -9,6 +9,8 @@
 <input type="text" name="nama_barang" class="form-control mb-2" value="<?= $edit ? $b->nama_barang : '' ?>" required>
 <label>Jumlah</label>
 <input type="number" name="jumlah" class="form-control mb-2" value="<?= $edit ? $b->jumlah : '' ?>" required>
+<label>Lokasi</label>
+<input type="text" name="lokasi" class="form-control mb-2" value="<?= $edit ? $b->lokasi : '' ?>" required>
 <label>Kondisi</label>
 <select name="kondisi" class="form-control mb-3">
 <option <?= ($edit && $b->kondisi == 'Baik') ? 'selected' : '' ?>>Baik</option>
