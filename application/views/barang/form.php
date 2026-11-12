@@ -3,14 +3,16 @@
 <div class="card shadow">
 <div class="card-body">
 <form method="post" action="<?= $edit ? site_url('barang/update/'.$b->id_barang) : site_url('barang/simpan') ?>">
-<label>Kode Barang</label>
-<input type="text" name="kode_barang" class="form-control mb-2" value="<?= $edit ? $b->kode_barang : '' ?>" required>
 <label>Nama Barang</label>
 <input type="text" name="nama_barang" class="form-control mb-2" value="<?= $edit ? $b->nama_barang : '' ?>" required>
-<label>lokasi</label>
+<label>Lokasi</label>
 <input type="text" name="lokasi" class="form-control mb-2" value="<?= $edit ? $b->lokasi : '' ?>" required>
 <label>Jumlah</label>
 <input type="number" name="jumlah" class="form-control mb-2" value="<?= $edit ? $b->jumlah : '' ?>" required>
+<label>Keluar</label>
+<input type="number" name="keluar" class="form-control mb-2" value="<?= $edit ? $b->keluar : '' ?>" required>
+<label>Masuk</label>
+<input type="number" name="masuk" class="form-control mb-2" value="<?= $edit ? $b->masuk : '' ?>" required>
 <label>Kondisi</label>
 <select name="kondisi" class="form-control mb-3">
 <option <?= ($edit && $b->kondisi == 'Baik') ? 'selected' : '' ?>>Baik</option>
