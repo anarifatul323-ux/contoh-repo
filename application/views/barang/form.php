@@ -9,10 +9,6 @@
 <input type="text" name="lokasi" class="form-control mb-2" value="<?= $edit ? $b->lokasi : '' ?>" required>
 <label>Jumlah</label>
 <input type="number" name="jumlah" class="form-control mb-2" value="<?= $edit ? $b->jumlah : '' ?>" required>
-<label>Keluar</label>
-<input type="number" name="keluar" class="form-control mb-2" value="<?= $edit ? $b->keluar : '' ?>" required>
-<label>Masuk</label>
-<input type="number" name="masuk" class="form-control mb-2" value="<?= $edit ? $b->masuk : '' ?>" required>
 <label>Kondisi</label>
 <select name="kondisi" class="form-control mb-3">
 <option <?= ($edit && $b->kondisi == 'Baik') ? 'selected' : '' ?>>Baik</option>
